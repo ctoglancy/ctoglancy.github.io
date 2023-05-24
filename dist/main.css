@@ -4,8 +4,7 @@ html {
     padding: 0;
     overflow: hidden;
     background-color: #202020;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+    font-family: 'Arial arrow Bold', sans-serif;
     font-size: 1.2rem;
     font-weight: 300;
     height: 100%;
@@ -20,99 +19,6 @@ canvas#three {
     touch-action: manipulation;
 }
 
-#samples, #transform-mode, #transform-lights {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
-}
-
-#duplicate, #remove {
-    display: none;
-    margin-left: 17px;
-}
-
-.scene-item {
-    margin-bottom: 15px;
-    margin-top: 15px;
-}
-
-#transform-mode {
-    display: none;
-}
-
-.green-button {
-    /* pale lime green */
-    background-color: #b8ff8f;
-    color: black;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 5px 10px;
-    margin: 5px;
-    letter-spacing: 2px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.2rem !important;
-    /* same width all */
-    width: 8rem;
-}
-
-
-
-.blue-button {
-    /* sky blue */
-    position: absolute;
-    background-color: #089feb;
-    color: white;
-    border: 1px solid black;
-    border-radius: 10px;
-    text-align: center;
-    padding: 5px 10px;
-    margin: 25px;
-    letter-spacing: 2px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.2rem !important;
-    /* same width all */
-    width: 8rem;
-    left:7.5em;
-    transform: translateX(-50%);
-}
-
-::file-selector-button {
-    display: none;
-  }
-
-.blue-button>input[type="file"] {
-    opacity: 0;
-    position: absolute;
-    pointer-events: none;
-}
-fieldset {
-    border:none;
-}
-
-#button-row, #green-buttons {
-  
-    z-index: 99999999;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    
-}
-
-#button-row {
-    position: absolute;
-    bottom: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100vw;
-}
-
-.scene-interface {
-    display: none !important;
-    right: 0 !important;
-    left: auto !important;
-    top: 0;
-}
 
 
 
@@ -129,17 +35,12 @@ fieldset {
 
 }
 
-#object-name {
-    display: inline-block;
-}
-
 
 .container {
     position: relative;
     height: 100%;
     background-color: transparent;
     z-index: 99999;
-    
 }
 
 .interface {
@@ -155,8 +56,7 @@ fieldset {
 
     justify-content: space-between;
     padding: 15px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+    font-family: 'Arial Narrow Bold', sans-serif;
     color: whitesmoke;
     left: 0;
     margin: 25px;
@@ -168,12 +68,6 @@ fieldset {
     scrollbar-width: none;
     /* Firefox */
 
-}
-
-#objects-control {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
 }
 
 #mobile-submenu {
@@ -209,6 +103,7 @@ fieldset {
 
 
 
+/* if mobile */
 @media only screen and (max-width: 1000px) {
     .interface {
         backdrop-filter: blur(5px);
@@ -413,7 +308,7 @@ fieldset {
     font-weight: 700;
 }
 
-.submenu {
+#submenu {
     display: grid;
     grid-template-columns: 5em 5em;
     grid-row: auto auto;
